@@ -1206,6 +1206,11 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
     margin-bottom: 0.45rem;
     font-size: 0.95rem;
 }
+.qnum {
+    color: var(--color-gold);
+    font-weight: 700;
+    margin-right: 0.15rem;
+}
 .label-uk {
     display: block;
     font-weight: 400;
@@ -1232,7 +1237,8 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
     border-radius: 8px;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.form-group textarea { min-height: 110px; resize: vertical; }
+.form-group textarea { min-height: 140px; resize: vertical; }
+.form-group textarea.lg { min-height: 240px; }
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
