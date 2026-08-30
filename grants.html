@@ -1,442 +1,783 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request a Grant · Подати заявку на грант — Akhiezer Heritage Foundation</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="images/AHF_logo.jpeg" alt="AHF Logo" class="logo-img">
-                <span class="logo-text">Akhiezer Heritage Foundation</span>
-            </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="#" class="coming-soon">Projects</a></li>
-                <li class="nav-dropdown">
-                    <a href="#" class="nav-dropdown-toggle active">Grants
-                        <svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                    </a>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="grants.html" class="active">Request a Grant</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="page-header">
-        <div class="container">
-            <h1>Request a Grant</h1>
-            <p class="page-title-uk">Подати заявку на грант</p>
-            <p class="page-subtitle">Supporting Ukrainian science, scholarship, and recovery<br>Підтримка української науки, освіти та відновлення</p>
-        </div>
-    </header>
-
-    <section class="grants-intro">
-        <div class="container">
-            <div class="bilingual-lead">
-                <p class="lead-text">The Akhiezer Heritage Foundation awards grants that strengthen the Ukrainian scientific community. We support scientists, students, and institutions working to sustain research, education, and scholarship in Ukraine and among Ukrainian scholars abroad. This page outlines what we fund, who is eligible, and what we ask of every grant recipient.</p>
-                <p class="lead-text lead-uk">Akhiezer Heritage Foundation надає гранти, що зміцнюють українську наукову спільноту. Ми підтримуємо вчених, студентів та установи, які працюють задля збереження досліджень, освіти та науки в Україні та серед українських науковців за кордоном. На цій сторінці описано, що ми фінансуємо, хто може подати заявку та яких вимог ми очікуємо від кожного отримувача гранту.</p>
-                <p style="margin-top:1.5rem;"><a href="#apply" class="btn btn-primary">Apply now · Подати заявку</a></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Request a Grant · Подати заявку на грант — Akhiezer Heritage Foundation
+        </title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/AHF_logo.jpeg" alt="AHF Logo" class="logo-img" />
+                    <span class="logo-text">Akhiezer Heritage Foundation</span>
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="#" class="coming-soon">Projects</a></li>
+                    <li><a href="grants.html" class="active">Grants</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <section class="grants-fund">
-        <div class="container">
-            <div class="bilingual-grid">
-                <div class="bilingual-col">
-                    <h2 class="col-title">What We Support</h2>
-                    <ul class="grant-list">
-                        <li>Scholarships and stipends for students and early-career scientists</li>
-                        <li>Research grants and project funding</li>
-                        <li>Scientific conferences, seminars, and academic events</li>
-                        <li>Humanitarian assistance for scientists and their families affected by the war</li>
-                        <li>Support for scientific journals and scholarly publications</li>
-                        <li>Access to AI and digital tools for research</li>
-                        <li>Reasonable administrative costs directly tied to a funded project (limited to 10% of the grant)</li>
-                    </ul>
-                    <p class="grant-note">Given the ongoing russian aggression, the Foundation also considers grants in other humanitarian categories.</p>
-                </div>
-                <div class="bilingual-col">
-                    <h2 class="col-title">Що ми підтримуємо</h2>
-                    <ul class="grant-list">
-                        <li>Стипендії для студентів та вчених-початківців</li>
-                        <li>Гранти на дослідження та фінансування проєктів</li>
-                        <li>Наукові конференції, семінари та академічні заходи</li>
-                        <li>Гуманітарну допомогу вченим та їхнім родинам, які постраждали від війни</li>
-                        <li>Підтримку наукових журналів та публікацій</li>
-                        <li>Доступ до інструментів штучного інтелекту та цифрових засобів для досліджень</li>
-                        <li>Обґрунтовані адміністративні витрати, безпосередньо пов'язані з профінансованим проєктом (не більше 10% від суми гранту)</li>
-                    </ul>
-                    <p class="grant-note">З огляду на російську агресію, що триває, Фонд також розглядає гранти в інших гуманітарних категоріях.</p>
+        <header class="page-header">
+            <div class="container">
+                <h1>Request a Grant</h1>
+                <p class="page-title-uk">Подати заявку на грант</p>
+                <p class="page-subtitle">
+                    Supporting Ukrainian science, scholarship, and recovery<br />Підтримка
+                    української науки, освіти та відновлення
+                </p>
+            </div>
+        </header>
+
+        <section class="grants-intro">
+            <div class="container">
+                <div class="bilingual-lead">
+                    <p class="lead-text">
+                        The Akhiezer Heritage Foundation awards grants that strengthen the
+                        Ukrainian scientific community. We support scientists, students,
+                        and institutions working to sustain research, education, and
+                        scholarship in Ukraine and among Ukrainian scholars abroad. This
+                        page outlines what we fund, who is eligible, and what we ask of
+                        every grant recipient.
+                    </p>
+                    <p class="lead-text lead-uk">
+                        Akhiezer Heritage Foundation надає гранти, що зміцнюють українську
+                        наукову спільноту. Ми підтримуємо вчених, студентів та установи,
+                        які працюють задля збереження досліджень, освіти та науки в
+                        Україні та серед українських науковців за кордоном. На цій
+                        сторінці описано, що ми фінансуємо, хто може подати заявку та яких
+                        вимог ми очікуємо від кожного отримувача гранту.
+                    </p>
+                    <p style="margin-top: 1.5rem">
+                        <a href="#apply" class="btn btn-primary"
+                            >Apply now · Подати заявку</a
+                        >
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="grants-eligibility">
-        <div class="container">
-            <div class="bilingual-grid">
-                <div class="bilingual-col">
-                    <h2 class="col-title">Who Can Apply</h2>
-                    <ul class="grant-list">
-                        <li>Ukrainian universities, research institutes, and scientific organizations</li>
-                        <li>Registered nonprofit organizations supporting the Ukrainian scientific community</li>
-                        <li>Individual scientists, scholars, and students affiliated with a Ukrainian institution or a recognized sponsoring organization</li>
-                        <li>Applicants whose work aligns with the Foundation's mission in science, education, and humanitarian relief</li>
-                    </ul>
-                    <h3 class="col-subtitle">What We Do Not Fund</h3>
-                    <ul class="grant-list">
-                        <li>Political campaigns or partisan activity</li>
-                        <li>For-profit or commercial ventures</li>
-                        <li>Activities unrelated to science, education, or humanitarian relief</li>
-                        <li>Costs already fully covered by other funding sources</li>
-                    </ul>
-                </div>
-                <div class="bilingual-col">
-                    <h2 class="col-title">Хто може подати заявку</h2>
-                    <ul class="grant-list">
-                        <li>Українські університети, науково-дослідні інститути та наукові організації</li>
-                        <li>Зареєстровані неприбуткові організації, що підтримують українську наукову спільноту</li>
-                        <li>Окремі вчені, науковці та студенти, пов'язані з українською установою або визнаною організацією-партнером</li>
-                        <li>Заявники, чия діяльність відповідає місії Фонду у сфері науки, освіти та гуманітарної допомоги</li>
-                    </ul>
-                    <h3 class="col-subtitle">Що ми не фінансуємо</h3>
-                    <ul class="grant-list">
-                        <li>Політичні кампанії або партійну діяльність</li>
-                        <li>Комерційні проєкти чи діяльність із метою отримання прибутку</li>
-                        <li>Діяльність, не пов'язану з наукою, освітою чи гуманітарною допомогою</li>
-                        <li>Витрати, які вже повністю покриваються іншими джерелами фінансування</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grants-expect">
-        <div class="container">
-            <div class="bilingual-grid">
-                <div class="bilingual-col">
-                    <h2 class="col-title">Requirements for Recipients</h2>
-                    <ul class="grant-list">
-                        <li>Use funds solely for the approved purpose described in the grant agreement</li>
-                        <li>Maintain accurate financial records and supporting documentation</li>
-                        <li>Submit progress and financial reports on the schedule set in the agreement</li>
-                        <li>Return any unused or unspent funds to the Foundation</li>
-                        <li>Comply with all applicable U.S. and Ukrainian laws; funds may not benefit any sanctioned individual or entity</li>
-                        <li>Acknowledge the Foundation's support in related publications and communications</li>
-                    </ul>
-                </div>
-                <div class="bilingual-col">
-                    <h2 class="col-title">Вимоги до отримувачів</h2>
-                    <ul class="grant-list">
-                        <li>Використовувати кошти виключно на затверджену мету, зазначену в грантовій угоді</li>
-                        <li>Вести точну фінансову звітність та зберігати підтвердні документи</li>
-                        <li>Подавати звіти про хід виконання та фінансові звіти згідно з графіком, визначеним в угоді</li>
-                        <li>Повертати Фонду будь-які невикористані кошти</li>
-                        <li>Дотримуватися всіх чинних законів США та України; кошти не можуть надаватися особам чи організаціям, які перебувають під санкціями</li>
-                        <li>Зазначати підтримку Фонду у відповідних публікаціях та повідомленнях</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grants-process">
-        <div class="container">
-            <h2 class="section-title">How to Apply · Як подати заявку</h2>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-num">1</div>
-                    <div>
-                        <h3>Review</h3>
-                        <p>Confirm your project fits the Foundation's mission and the funding areas listed above.</p>
-                        <div class="step-uk">
-                            <h3>Ознайомтеся</h3>
-                            <p>Переконайтеся, що ваш проєкт відповідає місії Фонду та переліченим вище напрямкам фінансування.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">2</div>
-                    <div>
-                        <h3>Apply</h3>
-                        <p>Complete the application form below with your project details, timeline, and budget.</p>
-                        <div class="step-uk">
-                            <h3>Подайте заявку</h3>
-                            <p>Заповніть форму заявки нижче, вказавши деталі проєкту, терміни та бюджет.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">3</div>
-                    <div>
-                        <h3>Review &amp; Follow-up</h3>
-                        <p>Our board reviews each request. We may contact you for clarification or additional documents.</p>
-                        <div class="step-uk">
-                            <h3>Розгляд та уточнення</h3>
-                            <p>Наша рада розглядає кожну заявку. Ми можемо звернутися до вас за уточненнями або додатковими документами.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">4</div>
-                    <div>
-                        <h3>Decision &amp; Agreement</h3>
-                        <p>Approved applicants sign a grant agreement setting out the funded scope, reporting schedule, and terms of use. All grant decisions are made at the sole discretion of the Foundation.</p>
-                        <div class="step-uk">
-                            <h3>Рішення та угода</h3>
-                            <p>Схвалені заявники підписують грантову угоду, що визначає профінансований обсяг, графік звітності та умови використання коштів. Усі рішення щодо грантів ухвалюються на власний розсуд Фонду.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grants-apply" id="apply">
-        <div class="container">
-            <h2 class="section-title">Application · Заявка</h2>
-
-            <div class="form-preamble">
-                <h3>Please read before applying · Прочитайте перед поданням заявки</h3>
+        <section class="grants-fund">
+            <div class="container">
                 <div class="bilingual-grid">
                     <div class="bilingual-col">
-                        <p>As a U.S. nonprofit, the Foundation must follow U.S. law and OFAC sanctions rules. A couple of things worth knowing before you apply:</p>
-                        <ul>
-                            <li>We can't fund active combatants or supply military infrastructure — fuel, technical or military equipment, and the like. We can support protective gear for volunteers and medical aid.</li>
-                            <li>U.S. sanctions restrict any financial dealings tied to Ukraine's occupied territories — Crimea, parts of Donbas, and anything beyond the line of contact. So we need to confirm that partners aren't based or operating there and don't appear on OFAC lists.</li>
+                        <h2 class="col-title">What We Support</h2>
+                        <ul class="grant-list">
+                            <li>
+                                Scholarships and stipends for students and early-career
+                                scientists
+                            </li>
+                            <li>Research grants and project funding</li>
+                            <li>Scientific conferences, seminars, and academic events</li>
+                            <li>
+                                Humanitarian assistance for scientists and their families
+                                affected by the war
+                            </li>
+                            <li>
+                                Support for scientific journals and scholarly publications
+                            </li>
+                            <li>Access to AI and digital tools for research</li>
+                            <li>
+                                Reasonable administrative costs directly tied to a funded
+                                project (limited to 10% of the grant)
+                            </li>
                         </ul>
-                        <p>The questions below help us show we meet these rules — thanks for bearing with us.</p>
                     </div>
-                    <div class="bilingual-col preamble-uk">
-                        <p>Як американська неприбуткова організація, Фонд зобов'язаний дотримуватися законів США та санкційних правил OFAC. Кілька речей, які варто знати перед поданням заявки:</p>
-                        <ul>
-                            <li>Ми не можемо фінансувати учасників бойових дій чи надавати військову інфраструктуру — пальне, технічне або військове забезпечення тощо. Але можемо підтримувати засоби захисту для волонтерів та медичну допомогу.</li>
-                            <li>Санкції США обмежують будь-які фінансові відносини, пов'язані з окупованими територіями України — Кримом, частиною Донбасу та всім, що за лінією бойового зіткнення (ЛБЗ). Тому ми маємо підтвердити, що партнери не перебувають і не працюють на цих територіях та не входять до списків OFAC.</li>
+                    <div class="bilingual-col">
+                        <h2 class="col-title">Що ми підтримуємо</h2>
+                        <ul class="grant-list">
+                            <li>Стипендії для студентів та вчених-початківців</li>
+                            <li>Гранти на дослідження та фінансування проєктів</li>
+                            <li>Наукові конференції, семінари та академічні заходи</li>
+                            <li>
+                                Гуманітарну допомогу вченим та їхнім родинам, які
+                                постраждали від війни
+                            </li>
+                            <li>Підтримку наукових журналів та публікацій</li>
+                            <li>
+                                Доступ до інструментів штучного інтелекту та цифрових
+                                засобів для досліджень
+                            </li>
+                            <li>
+                                Обґрунтовані адміністративні витрати, безпосередньо
+                                пов'язані з профінансованим проєктом (не більше 10% від
+                                суми гранту)
+                            </li>
                         </ul>
-                        <p>Наведені нижче питання допомагають нам це підтвердити. Дякуємо за розуміння.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <form id="grant-form" class="grant-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Web3Forms configuration -->
-                <input type="hidden" name="access_key" value="3b73167d-8657-42ba-a1cd-7f5c428410a0">
-                <input type="hidden" name="subject" value="New grant application — akhiezer.org">
-                <input type="hidden" name="from_name" value="Akhiezer Grant Application">
-                <!-- Honeypot spam trap (leave empty) -->
-                <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+        <section class="grants-eligibility">
+            <div class="container">
+                <div class="bilingual-grid">
+                    <div class="bilingual-col">
+                        <h2 class="col-title">Who Can Apply</h2>
+                        <ul class="grant-list">
+                            <li>
+                                Ukrainian universities, research institutes, and
+                                scientific organizations
+                            </li>
+                            <li>
+                                Registered nonprofit organizations supporting the
+                                Ukrainian scientific community
+                            </li>
+                            <li>
+                                Individual scientists, scholars, and students affiliated
+                                with a Ukrainian institution or a recognized sponsoring
+                                organization
+                            </li>
+                            <li>
+                                Applicants whose work aligns with the Foundation's mission
+                                in science, education, and humanitarian relief
+                            </li>
+                        </ul>
+                        <h3 class="col-subtitle">What We Do Not Fund</h3>
+                        <ul class="grant-list">
+                            <li>Political campaigns or partisan activity</li>
+                            <li>For-profit or commercial ventures</li>
+                            <li>
+                                Activities unrelated to science, education, or
+                                humanitarian relief
+                            </li>
+                            <li>Costs already fully covered by other funding sources</li>
+                        </ul>
+                    </div>
+                    <div class="bilingual-col">
+                        <h2 class="col-title">Хто може подати заявку</h2>
+                        <ul class="grant-list">
+                            <li>
+                                Українські університети, науково-дослідні інститути та
+                                наукові організації
+                            </li>
+                            <li>
+                                Зареєстровані неприбуткові організації, що підтримують
+                                українську наукову спільноту
+                            </li>
+                            <li>
+                                Окремі вчені, науковці та студенти, пов'язані з
+                                українською установою або визнаною організацією-партнером
+                            </li>
+                            <li>
+                                Заявники, чия діяльність відповідає місії Фонду у сфері
+                                науки, освіти та гуманітарної допомоги
+                            </li>
+                        </ul>
+                        <h3 class="col-subtitle">Що ми не фінансуємо</h3>
+                        <ul class="grant-list">
+                            <li>Політичні кампанії або партійну діяльність</li>
+                            <li>
+                                Комерційні проєкти чи діяльність із метою отримання
+                                прибутку
+                            </li>
+                            <li>
+                                Діяльність, не пов'язану з наукою, освітою чи гуманітарною
+                                допомогою
+                            </li>
+                            <li>
+                                Витрати, які вже повністю покриваються іншими джерелами
+                                фінансування
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="form-group">
-                    <label for="org_name">Full name of your organization <span class="req">*</span>
-                        <span class="label-uk">Повна назва Вашої організації</span>
-                    </label>
-                    <input type="text" id="org_name" name="Organization name" required>
+        <section class="grants-expect">
+            <div class="container">
+                <div class="bilingual-grid">
+                    <div class="bilingual-col">
+                        <h2 class="col-title">Requirements for Recipients</h2>
+                        <ul class="grant-list">
+                            <li>
+                                Use funds solely for the approved purpose described in the
+                                grant agreement
+                            </li>
+                            <li>
+                                Maintain accurate financial records and supporting
+                                documentation
+                            </li>
+                            <li>
+                                Submit progress and financial reports on the schedule set
+                                in the agreement
+                            </li>
+                            <li>Return any unused or unspent funds to the Foundation</li>
+                            <li>
+                                Comply with all applicable U.S. and Ukrainian laws; funds
+                                may not benefit any sanctioned individual or entity
+                            </li>
+                            <li>
+                                Acknowledge the Foundation's support in related
+                                publications and communications
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bilingual-col">
+                        <h2 class="col-title">Вимоги до отримувачів</h2>
+                        <ul class="grant-list">
+                            <li>
+                                Використовувати кошти виключно на затверджену мету,
+                                зазначену в грантовій угоді
+                            </li>
+                            <li>
+                                Вести точну фінансову звітність та зберігати підтвердні
+                                документи
+                            </li>
+                            <li>
+                                Подавати звіти про хід виконання та фінансові звіти згідно
+                                з графіком, визначеним в угоді
+                            </li>
+                            <li>Повертати Фонду будь-які невикористані кошти</li>
+                            <li>
+                                Дотримуватися всіх чинних законів США та України; кошти не
+                                можуть надаватися особам чи організаціям, які перебувають
+                                під санкціями
+                            </li>
+                            <li>
+                                Зазначати підтримку Фонду у відповідних публікаціях та
+                                повідомленнях
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grants-process">
+            <div class="container">
+                <h2 class="section-title">How to Apply · Як подати заявку</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-num">1</div>
+                        <div>
+                            <h3>Review</h3>
+                            <p>
+                                Confirm your project fits the Foundation's mission and the
+                                funding areas listed above.
+                            </p>
+                            <div class="step-uk">
+                                <h3>Ознайомтеся</h3>
+                                <p>
+                                    Переконайтеся, що ваш проєкт відповідає місії Фонду та
+                                    переліченим вище напрямкам фінансування.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">2</div>
+                        <div>
+                            <h3>Apply</h3>
+                            <p>
+                                Complete the application form below with your project
+                                details, timeline, and budget.
+                            </p>
+                            <div class="step-uk">
+                                <h3>Подайте заявку</h3>
+                                <p>
+                                    Заповніть форму заявки нижче, вказавши деталі проєкту,
+                                    терміни та бюджет.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">3</div>
+                        <div>
+                            <h3>Review &amp; Follow-up</h3>
+                            <p>
+                                Our board reviews each request. We may contact you for
+                                clarification or additional documents.
+                            </p>
+                            <div class="step-uk">
+                                <h3>Розгляд та уточнення</h3>
+                                <p>
+                                    Наша рада розглядає кожну заявку. Ми можемо звернутися
+                                    до вас за уточненнями або додатковими документами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">4</div>
+                        <div>
+                            <h3>Decision &amp; Agreement</h3>
+                            <p>
+                                Approved applicants sign a grant agreement setting out the
+                                funded scope, reporting schedule, and terms of use. All
+                                grant decisions are made at the sole discretion of the
+                                Foundation.
+                            </p>
+                            <div class="step-uk">
+                                <h3>Рішення та угода</h3>
+                                <p>
+                                    Схвалені заявники підписують грантову угоду, що
+                                    визначає профінансований обсяг, графік звітності та
+                                    умови використання коштів. Усі рішення щодо грантів
+                                    ухвалюються на власний розсуд Фонду.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grants-apply" id="apply">
+            <div class="container">
+                <h2 class="section-title">Application · Заявка</h2>
+
+                <div class="form-preamble">
+                    <h3>
+                        Please read before applying · Прочитайте перед поданням заявки
+                    </h3>
+                    <div class="bilingual-grid">
+                        <div class="bilingual-col">
+                            <p>
+                                As a U.S. nonprofit, the Foundation must follow U.S. law
+                                and OFAC sanctions rules. A couple of things worth knowing
+                                before you apply:
+                            </p>
+                            <ul>
+                                <li>
+                                    We can't fund active combatants or supply military
+                                    infrastructure — fuel, technical or military
+                                    equipment, and the like. We can support protective
+                                    gear for volunteers and medical aid.
+                                </li>
+                                <li>
+                                    U.S. sanctions restrict any financial dealings tied to
+                                    Ukraine's occupied territories — Crimea, parts of
+                                    Donbas, and anything beyond the line of contact. So we
+                                    need to confirm that partners aren't based or
+                                    operating there and don't appear on OFAC lists.
+                                </li>
+                            </ul>
+                            <p>
+                                The questions below help us show we meet these rules —
+                                thanks for bearing with us.
+                            </p>
+                        </div>
+                        <div class="bilingual-col preamble-uk">
+                            <p>
+                                Як американська неприбуткова організація, Фонд
+                                зобов'язаний дотримуватися законів США та санкційних
+                                правил OFAC. Кілька речей, які варто знати перед поданням
+                                заявки:
+                            </p>
+                            <ul>
+                                <li>
+                                    Ми не можемо фінансувати учасників бойових дій чи
+                                    надавати військову інфраструктуру — пальне, технічне
+                                    або військове забезпечення тощо. Але можемо
+                                    підтримувати засоби захисту для волонтерів та медичну
+                                    допомогу.
+                                </li>
+                                <li>
+                                    Санкції США обмежують будь-які фінансові відносини,
+                                    пов'язані з окупованими територіями України — Кримом,
+                                    частиною Донбасу та всім, що за лінією бойового
+                                    зіткнення (ЛБЗ). Тому ми маємо підтвердити, що
+                                    партнери не перебувають і не працюють на цих
+                                    територіях та не входять до списків OFAC.
+                                </li>
+                            </ul>
+                            <p>
+                                Наведені нижче питання допомагають нам це підтвердити.
+                                Дякуємо за розуміння.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <h3 class="form-subhead">Contact person <span class="label-uk">Контактна особа</span></h3>
+                <form
+                    id="grant-form"
+                    class="grant-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                >
+                    <!-- Web3Forms configuration -->
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="3b73167d-8657-42ba-a1cd-7f5c428410a0"
+                    />
+                    <input
+                        type="hidden"
+                        name="subject"
+                        value="New grant application — akhiezer.org"
+                    />
+                    <input
+                        type="hidden"
+                        name="from_name"
+                        value="Akhiezer Grant Application"
+                    />
+                    <!-- Honeypot spam trap (leave empty) -->
+                    <input
+                        type="checkbox"
+                        name="botcheck"
+                        style="display: none"
+                        tabindex="-1"
+                        autocomplete="off"
+                    />
 
-                <div class="form-row">
                     <div class="form-group">
-                        <label for="first_name">First name <span class="req">*</span>
-                            <span class="label-uk">Ім'я</span>
+                        <label for="org_name"
+                            >Full name of your organization <span class="req">*</span>
+                            <span class="label-uk">Повна назва Вашої організації</span>
                         </label>
-                        <input type="text" id="first_name" name="First name" required>
+                        <input
+                            type="text"
+                            id="org_name"
+                            name="Organization name"
+                            required
+                        />
                     </div>
+
+                    <h3 class="form-subhead">
+                        Contact person <span class="label-uk">Контактна особа</span>
+                    </h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first_name"
+                                >First name <span class="req">*</span>
+                                <span class="label-uk">Ім'я</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="first_name"
+                                name="First name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name"
+                                >Last name <span class="req">*</span>
+                                <span class="label-uk">Прізвище</span>
+                            </label>
+                            <input type="text" id="last_name" name="Last name" required />
+                        </div>
+                    </div>
+
                     <div class="form-group">
-                        <label for="last_name">Last name <span class="req">*</span>
-                            <span class="label-uk">Прізвище</span>
+                        <label for="position"
+                            >Position in the organization
+                            <span class="label-uk">Посада в організації</span>
                         </label>
-                        <input type="text" id="last_name" name="Last name" required>
+                        <input
+                            type="text"
+                            id="position"
+                            name="Position in organization"
+                        />
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="position">Position in the organization
-                        <span class="label-uk">Посада в організації</span>
-                    </label>
-                    <input type="text" id="position" name="Position in organization">
-                </div>
+                    <div class="form-group">
+                        <label for="email"
+                            >Email <span class="req">*</span>
+                            <span class="label-uk">Електронна пошта</span>
+                        </label>
+                        <input type="email" id="email" name="Email" required />
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Email <span class="req">*</span>
-                        <span class="label-uk">Електронна пошта</span>
-                    </label>
-                    <div class="repeat-group">
-                        <div class="repeat-row">
-                            <input type="email" id="email" class="repeat-input" required placeholder="name@example.org">
+                    <div class="form-group">
+                        <label for="messenger"
+                            >WhatsApp or Viber
+                            <span class="label-uk">WhatsApp або Viber</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="messenger"
+                            name="WhatsApp or Viber"
+                            placeholder="+380…"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year_founded"
+                            >Year founded
+                            <span class="label-uk">Рік створення</span>
+                        </label>
+                        <input
+                            type="number"
+                            id="year_founded"
+                            name="Year founded"
+                            min="1800"
+                            max="2026"
+                            placeholder="e.g. 2015"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year_registered"
+                            >Year of official registration
+                            <span class="label-uk">Рік офіційної реєстрації</span>
+                        </label>
+                        <input
+                            type="number"
+                            id="year_registered"
+                            name="Year registered"
+                            min="1800"
+                            max="2026"
+                            placeholder="e.g. 2016"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edrpou"
+                            >Organization tax ID (EDRPOU)
+                            <span class="label-uk">Код ЄДРПОУ організації</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="edrpou"
+                            name="EDRPOU / Tax ID"
+                            placeholder="8 digits / 8 цифр"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label
+                            >Areas of assistance
+                            <span class="label-uk">Напрямки допомоги</span></label
+                        >
+                        <div class="checkbox-group">
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Scientific research"
+                                />
+                                Scientific research / Наукові дослідження</label
+                            >
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Education & STEM"
+                                />
+                                Education &amp; STEM / Освіта та STEM</label
+                            >
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Scholarships & stipends"
+                                />
+                                Scholarships &amp; stipends / Стипендії</label
+                            >
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Scientific conferences"
+                                />
+                                Scientific conferences / Наукові конференції</label
+                            >
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Humanitarian aid to scientists"
+                                />
+                                Humanitarian aid to scientists / Гуманітарна допомога
+                                вченим</label
+                            >
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Scholarly publishing"
+                                />
+                                Scholarly publishing / Наукові публікації</label
+                            >
+                            <label class="checkbox-option"
+                                ><input
+                                    type="checkbox"
+                                    name="Areas of assistance"
+                                    value="Other"
+                                />
+                                Other / Інше</label
+                            >
                         </div>
+                        <input
+                            type="text"
+                            name="Other area"
+                            placeholder="Other — please specify / Інше — уточніть"
+                            style="margin-top: 0.75rem"
+                        />
                     </div>
-                    <button type="button" class="repeat-add">+ Add another · Додати ще</button>
-                    <input type="hidden" class="repeat-hidden" name="Email">
-                </div>
 
-                <div class="form-group">
-                    <label>WhatsApp or Viber
-                        <span class="label-uk">WhatsApp або Viber</span>
-                    </label>
-                    <div class="repeat-group">
-                        <div class="repeat-row">
-                            <input type="text" class="repeat-input" inputmode="tel" placeholder="+380…">
+                    <div class="form-group">
+                        <label for="has_web"
+                            >Do you have a website or social media page?
+                            <span class="label-uk"
+                                >Наявність сайту або сторінки в соцмережах</span
+                            >
+                        </label>
+                        <select id="has_web" name="Has website or social media">
+                            <option value="">— Select / Оберіть —</option>
+                            <option value="Yes">Yes / Так</option>
+                            <option value="No">No / Ні</option>
+                        </select>
+                        <input
+                            type="text"
+                            name="Website / social links"
+                            placeholder="Links: website, Facebook, etc. / Посилання: сайт, Facebook тощо"
+                            style="margin-top: 0.75rem"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tax"
+                            >Availability of tax returns
+                            <span class="label-uk">Наявність податкових декларацій</span>
+                        </label>
+                        <select id="tax" name="Tax returns available">
+                            <option value="">— Select / Оберіть —</option>
+                            <option value="Yes - 1 year">
+                                Yes — last 1 year / Так — за 1 рік
+                            </option>
+                            <option value="Yes - 3 years">
+                                Yes — last 3 years / Так — за 3 роки
+                            </option>
+                            <option value="Yes - 5 years">
+                                Yes — last 5 years / Так — за 5 років
+                            </option>
+                            <option value="No">No / Ні</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donors"
+                            >Which donors have you already had grant relationships with?
+                            <span class="label-uk"
+                                >З якими донорами ви вже мали грантові
+                                взаємовідносини?</span
+                            >
+                        </label>
+                        <textarea id="donors" name="Prior donors"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason"
+                            >Why did you approach us specifically?
+                            <span class="label-uk"
+                                >З якої причини ви звернулись саме до нас?</span
+                            >
+                        </label>
+                        <textarea id="reason" name="Reason for applying"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="use"
+                            >How do you plan to spend the funds you receive?
+                            <span class="label-uk"
+                                >Як ви плануєте витратити отримані кошти?</span
+                            >
+                        </label>
+                        <textarea id="use" name="Planned use of funds"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="compliance"
+                            >Are you ready to meet all financial requirements of the U.S.
+                            IRS and OFAC? <span class="req">*</span>
+                            <span class="label-uk"
+                                >Чи готові ви виконувати всі фінансові вимоги
+                                американських установ IRS та OFAC?</span
+                            >
+                        </label>
+                        <select
+                            id="compliance"
+                            name="Agrees to IRS/OFAC requirements"
+                            required
+                        >
+                            <option value="">— Select / Оберіть —</option>
+                            <option value="Yes">Yes / Так</option>
+                            <option value="No">No / Ні</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            Submit Application · Надіслати заявку
+                        </button>
+                        <p class="form-note">
+                            Required fields are marked with <span class="req">*</span>. ·
+                            Обов'язкові поля позначено <span class="req">*</span>.
+                        </p>
+                    </div>
+                </form>
+                <div
+                    id="form-status"
+                    class="form-status"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <div class="footer-logo">
+                            <img
+                                src="images/AHF_logo.jpeg"
+                                alt="AHF Logo"
+                                class="footer-logo-img"
+                            />
+                            <span>Akhiezer Heritage Foundation</span>
                         </div>
+                        <p>
+                            A US non-profit registered in the State of Connecticut,
+                            dedicated to education, humanitarian relief, and honoring the
+                            legacy of Naum Akhiezer.
+                        </p>
                     </div>
-                    <button type="button" class="repeat-add">+ Add another · Додати ще</button>
-                    <input type="hidden" class="repeat-hidden" name="WhatsApp or Viber">
-                </div>
-
-                <div class="form-group">
-                    <label for="year_founded">Year founded
-                        <span class="label-uk">Рік створення</span>
-                    </label>
-                    <input type="number" id="year_founded" name="Year founded" min="1800" max="2026" placeholder="e.g. 2015">
-                </div>
-
-                <div class="form-group">
-                    <label for="year_registered">Year of official registration
-                        <span class="label-uk">Рік офіційної реєстрації</span>
-                    </label>
-                    <input type="number" id="year_registered" name="Year registered" min="1800" max="2026" placeholder="e.g. 2016">
-                </div>
-
-                <div class="form-group">
-                    <label for="edrpou">Organization tax ID (EDRPOU)
-                        <span class="label-uk">Код ЄДРПОУ організації</span>
-                    </label>
-                    <input type="text" id="edrpou" name="EDRPOU / Tax ID" placeholder="8 digits / 8 цифр">
-                </div>
-
-                <div class="form-group">
-                    <label>Areas of assistance <span class="label-uk">Напрямки допомоги</span></label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Scientific research"> Scientific research / Наукові дослідження</label>
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Education & STEM"> Education &amp; STEM / Освіта та STEM</label>
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Scholarships & stipends"> Scholarships &amp; stipends / Стипендії</label>
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Scientific conferences"> Scientific conferences / Наукові конференції</label>
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Humanitarian aid to scientists"> Humanitarian aid to scientists / Гуманітарна допомога вченим</label>
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Scholarly publishing"> Scholarly publishing / Наукові публікації</label>
-                        <label class="checkbox-option"><input type="checkbox" name="Areas of assistance" value="Other"> Other / Інше</label>
+                    <div class="footer-links">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="grants.html">Request a Grant</a></li>
+                        </ul>
                     </div>
-                    <input type="text" name="Other area" placeholder="Other — please specify / Інше — уточніть" style="margin-top:0.75rem;">
-                </div>
-
-                <div class="form-group">
-                    <label for="has_web">Do you have a website or social media page?
-                        <span class="label-uk">Наявність сайту або сторінки в соцмережах</span>
-                    </label>
-                    <select id="has_web" name="Has website or social media">
-                        <option value="">— Select / Оберіть —</option>
-                        <option value="Yes">Yes / Так</option>
-                        <option value="No">No / Ні</option>
-                    </select>
-                    <div class="repeat-group" style="margin-top:0.75rem;">
-                        <div class="repeat-row">
-                            <input type="text" class="repeat-input" inputmode="url" placeholder="https://…  (website, Facebook, Instagram)">
-                        </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>
+                            <a href="mailto:contact@akhiezer.org">contact@akhiezer.org</a>
+                        </p>
+                        <p>38 Saddle Rock Rd<br />Stamford, CT 06902</p>
+                        <p class="ein">EIN: 39-2675096</p>
                     </div>
-                    <button type="button" class="repeat-add">+ Add another link · Додати ще посилання</button>
-                    <input type="hidden" class="repeat-hidden" name="Website / social links">
                 </div>
-
-                <div class="form-group">
-                    <label for="tax">Availability of tax returns
-                        <span class="label-uk">Наявність податкових декларацій</span>
-                    </label>
-                    <select id="tax" name="Tax returns available">
-                        <option value="">— Select / Оберіть —</option>
-                        <option value="Yes - 1 year">Yes — last 1 year / Так — за 1 рік</option>
-                        <option value="Yes - 3 years">Yes — last 3 years / Так — за 3 роки</option>
-                        <option value="Yes - 5 years">Yes — last 5 years / Так — за 5 років</option>
-                        <option value="No">No / Ні</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="donors">Which donors have you already had grant relationships with?
-                        <span class="label-uk">З якими донорами ви вже мали грантові взаємовідносини?</span>
-                    </label>
-                    <textarea id="donors" name="Prior donors"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="reason">Why did you approach us specifically?
-                        <span class="label-uk">З якої причини ви звернулись саме до нас?</span>
-                    </label>
-                    <textarea id="reason" name="Reason for applying"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="use">How do you plan to spend the funds you receive?
-                        <span class="label-uk">Як ви плануєте витратити отримані кошти?</span>
-                    </label>
-                    <textarea id="use" name="Planned use of funds"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="compliance">Are you ready to meet all financial requirements of the U.S. IRS and OFAC? <span class="req">*</span>
-                        <span class="label-uk">Чи готові ви виконувати всі фінансові вимоги американських установ IRS та OFAC?</span>
-                    </label>
-                    <select id="compliance" name="Agrees to IRS/OFAC requirements" required>
-                        <option value="">— Select / Оберіть —</option>
-                        <option value="Yes">Yes / Так</option>
-                        <option value="No">No / Ні</option>
-                    </select>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary btn-large">Submit Application · Надіслати заявку</button>
-                    <p class="form-note">Required fields are marked with <span class="req">*</span>. · Обов'язкові поля позначено <span class="req">*</span>.</p>
-                </div>
-            </form>
-            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <img src="images/AHF_logo.jpeg" alt="AHF Logo" class="footer-logo-img">
-                        <span>Akhiezer Heritage Foundation</span>
-                    </div>
-                    <p>A US non-profit registered in the State of Connecticut, dedicated to education, humanitarian relief, and honoring the legacy of Naum Akhiezer.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Pages</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="grants.html">Request a Grant</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p><a href="mailto:contact@akhiezer.org">contact@akhiezer.org</a></p>
-                    <p>38 Saddle Rock Rd<br>Stamford, CT 06902</p>
-                    <p class="ein">EIN: 39-2675096</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Akhiezer Heritage Foundation. All rights reserved.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Akhiezer Heritage Foundation. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 </html>
