@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setSubject() {
         const subjectField = form.querySelector('[name="subject"]');
         if (!subjectField) return;
-        const base = '[Grants] New grant application — akhiezer.org';
+        const base = '[New grant application] from akhiezer.org';
         const orgEl = document.getElementById('org_name');
         let org = orgEl ? orgEl.value : '';
         // Strip control chars / newlines (header-injection hygiene), collapse
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .trim()
             .slice(0, 60);
         subjectField.value = org
-            ? '[Grants] New application — ' + org
+            ? '[New grant application] from ' + org
             : base;
     }
 
