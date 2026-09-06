@@ -84,9 +84,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Build a safe email subject from the org name (attacker-controlled input)
+    function setSubject() {
+        const subjectField = form.querySelector('[name="subject"]');
+        if (!subjectField) return;
+        const base = '[Grants] New grant application — akhiezer.org';
+        const orgEl = document.getElementById('org_name');
+        let org = orgEl ? orgEl.value : '';
+        // Strip control chars / newlines (header-injection hygiene), collapse
+        // whitespace, trim, and cap length.
+        org = org
+            .replace(/[\u0000-\u001F\u007F]+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .slice(0, 60);
+        subjectField.value = org
+            ? '[Grants] New application — ' + org
+            : base;
+    }
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         collectRepeats();
+        setSubject();
         status.className = 'form-status';
         status.textContent = 'Sending… · Надсилання…';
 
